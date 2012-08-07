@@ -13,9 +13,11 @@ to display Octopress' rake task. Of particular interest are:
 
 and
 
+  $ rake preview
+
   $ rake deploy
 
-which publishes the pages to our Intersect Australia github pages site, under the /ap11 folder.
+which allows you preview in localhost and then publishes the pages to our Intersect Australia github pages site, under the /ap11 folder.
 
 ## What is Octopress?
 
