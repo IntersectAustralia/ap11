@@ -2,6 +2,7 @@
 layout: page
 title: "why do this project"
 date: 2012-08-07 14:47
+tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsProjectDescription, andsContext, andsAims, andsObjectives
 comments: true
 sharing: true
 footer: true
@@ -29,4 +30,8 @@ The following are some of the key issues this project aims to alleviate:
 1. current procedure is prone to errors and of limited use because it is labor intensive
 1. there are no easy ways to visualise proteomic results; visualisation gives researchers important clues during results analysis
 1. In general, it is hard to establish relationships between the genome, with the transcriptome and protein profile at a given time 
+
+<hr/>
+
+[prev page](/product-team/) [next page](/users/)
 

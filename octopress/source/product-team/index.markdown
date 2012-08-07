@@ -2,6 +2,7 @@
 layout: page
 title: "product team"
 date: 2012-08-07 13:26
+tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsProjectTeam, andsSkills
 comments: true
 sharing: true
 footer: true
@@ -93,4 +94,8 @@ Carlos has a BSc in Mathematics from Univ. Los Andes (Colombia), a BSc in System
 Sean is Technical Leader, making sure a product is developed to Intersect's QA standards and the Centre expectations. He is a senior software engineer with 14 years experience, utilising a variety of languages including Java, Perl, Python and C++. Sean has significant experience with web applications and played a leading role in building the back ends for some of Australia's leading websites, including Excite Australia, Optus Internet and The Australian Financial Review.
 
 Sean has a Bachelor of Technology (Information and Communication Systems) from Macquarie University.
+
+<hr/>
+
+[next page](/why/)
 
