@@ -8,6 +8,7 @@ one can issue:
 to display Octopress' rake task. Of particular interest are:
 
   $ rake new_page["page title here"]
+
   $ rake new_post["post title here"]
 
 and
