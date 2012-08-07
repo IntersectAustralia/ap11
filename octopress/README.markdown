@@ -1,3 +1,21 @@
+## Usage
+
+This project uses Octopress to publish to github pages. After checking out the source and entering into this directory,
+one can issue:
+
+  $ rake -T
+
+to display Octopress' rake task. Of particular interest are:
+
+  $ rake new_page["page title here"]
+  $ rake new_post["post title here"]
+
+and
+
+  $ rake deploy
+
+which publishes the pages to our Intersect Australia github pages site, under the /ap11 folder.
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
