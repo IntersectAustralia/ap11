@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://IntersectAustralia.github.com/ap11/blog/2012/08/08/srs/</loc>
+        <lastmod>2012-08-08T14:19:17+10:00</lastmod>
+    </url>
+    <url>
         <loc>http://IntersectAustralia.github.com/ap11/blog/archives/</loc>
-        <lastmod>2012-08-07T13:13:18+10:00</lastmod>
+        <lastmod>2012-08-08T14:19:17+10:00</lastmod>
     </url>
     <url>
         <loc>http://IntersectAustralia.github.com/ap11/design/</loc>
@@ -14,7 +18,7 @@
     </url>
     <url>
         <loc>http://IntersectAustralia.github.com/ap11/</loc>
-        <lastmod>2012-08-07T13:13:18+10:00</lastmod>
+        <lastmod>2012-08-08T14:19:17+10:00</lastmod>
     </url>
     <url>
         <loc>http://IntersectAustralia.github.com/ap11/measuring-success/</loc>

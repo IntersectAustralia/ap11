@@ -4,7 +4,7 @@
   <title><![CDATA[Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2012-08-08T10:46:17+10:00</updated>
+  <updated>2012-08-08T14:19:18+10:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -12,5 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SRS pages]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2012/08/08/srs/"/>
+    <updated>2012-08-08T14:10:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2012/08/08/srs</id>
+    <content type="html"><![CDATA[<p>The Sofware Requirements Specification (SRS) is live as a set of pages answering broadest questions in regards to the project.</p>
+
+<p>Here they are:</p>
+
+<ol>
+<li>Who is doing this? <a href="http://IntersectAustralia.github.com/ap11/product-team/">Product team</a></li>
+<li>Why is it worth doing? <a href="http://IntersectAustralia.github.com/ap11/why/">Main goals</a></li>
+<li>Who is this for? <a href="http://IntersectAustralia.github.com/ap11/users/">Users</a></li>
+<li>What is the added value? <a href="http://IntersectAustralia.github.com/ap11/measuring-success/">Specific goals</a></li>
+<li>How is it going to work? <a href="http://IntersectAustralia.github.com/ap11/design/">Features and architecture</a></li>
+<li>What will be the outcomes? <a href="http://IntersectAustralia.github.com/ap11/outcomes/">Products and outcomes</a></li>
+</ol>
+
+
+<p>We will be updating these entries as we go and are a key reference in the evolution of the project.</p>
+]]></content>
+  </entry>
   
 </feed>
