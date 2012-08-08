@@ -7,7 +7,7 @@ comments: true
 categories: 
 ---
 
-The Sofware Requirements Specification (SRS) is live as a set of pages answering broadest questions in regards to the project. 
+The Sofware Requirements Specification (SRS) is live as a set of pages answering some general questions about the project. 
 
 Here they are:
 
