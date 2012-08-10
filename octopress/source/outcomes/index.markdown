@@ -11,6 +11,8 @@ footer: true
 ## Primary software products
 
 1. Virtual protein generator
+1. Intensity analysis tool
+1. Isoforms paths and peptide splits
 1. Mascot to SAM convert utility
 1. Gene scanner to FASTA (?)
 1. Simple collections advertiser
