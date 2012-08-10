@@ -82,6 +82,10 @@ component.
 
 {% img /design/web-architecture.jpg 350 %}
 
+An initial draft of the site follows
+
+{% img /design/web-site.jpg 750 %}
+
 
 # Functionality
 
