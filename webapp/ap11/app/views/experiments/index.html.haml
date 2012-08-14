@@ -1,0 +1,24 @@
+%h1 Listing experiments
+
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th Title
+      %th Date
+      %th Owner
+      %th
+      %th
+      %th
+
+  - @experiments.each do |experiment|
+    %tr
+      %td= experiment.title
+      %td= experiment.date
+      %td= experiment.user.full_name
+      %td= link_to 'Show', experiment
+      %td= link_to 'Edit', edit_experiment_path(experiment)
+      %td= link_to 'Destroy', experiment, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Experiment', new_experiment_path

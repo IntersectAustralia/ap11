@@ -27,6 +27,12 @@ end
     end
   end
 
+  resources :experiments do
+    collection do
+      #get/put input collections
+      #get/put output collections
+    end
+  end
 
   root :to => "pages#home"
 

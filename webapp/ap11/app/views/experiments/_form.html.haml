@@ -1,0 +1,23 @@
+= form_for(@experiment) do |f|
+
+  = render "shared/error_messages", :target => @experiment
+
+  .control-group
+    = f.label :title, "Title", :class => "control-label"
+    .controls
+      = f.text_field :title
+
+  .control-group
+    = f.label :date, "Date", :class => "control-label"
+    .controls
+      = f.date_select :date
+
+  .control-group
+    = f.label :user, "Owner", :class => "control-label"
+    .controls
+      = f.collection_select :user_id, @users, :id, :full_name
+
+  .form-actions
+    = f.submit 'Create Experiment', :class => "btn btn-primary"
+    = f.button 'Cancel', :class => "btn" #TODO: simple redirect
+

@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @experiment.title
+%p
+  %b Date:
+  = @experiment.date
+
+= link_to 'Edit', edit_experiment_path(@experiment)
+\|
+= link_to 'Back', experiments_path

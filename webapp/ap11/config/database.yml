@@ -1,11 +1,11 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
+# Postgresql 9.0
+
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  host: localhost
+  database: ap11-dev
+  username: ap11
+  password: ap11
   pool: 5
   timeout: 5000
 
@@ -13,16 +13,31 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  host: localhost
+  database: ap11-test
+  username: ap11
+  password: ap11
   pool: 5
   timeout: 5000
 
-production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+production: &production
+  adapter: postgresql
+  host: localhost
+  database: ap11
+  username: ap11
+  password: ap11
   pool: 5
   timeout: 5000
+
+staging:
+  <<: *production
+
+qa:
+  <<: *production
 
 cucumber:
+  <<: *test
+
+spec:
   <<: *test

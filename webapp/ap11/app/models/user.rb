@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
 
   belongs_to :role
 
+  has_many :experiment, :foreign_key => 'user_id'
+
   # Setup accessible attributes (status/approved flags should NEVER be accessible by mass assignment)
   attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
 
