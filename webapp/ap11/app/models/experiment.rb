@@ -3,6 +3,8 @@ class Experiment < ActiveRecord::Base
 
   belongs_to :user
 
+  has_one :collection, :foreign_key => 'experiment_id', :dependent => :destroy
+
   validates :date,  :presence => true
   validates :title, :presence => true
 end

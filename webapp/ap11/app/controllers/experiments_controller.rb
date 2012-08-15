@@ -50,7 +50,7 @@ class ExperimentsController < ApplicationController
         format.html { redirect_to experiments_path, notice: 'Experiment was successfully created.' }
         format.json { render json: @experiment, status: :created, location: @experiment }
       else
-        format.html { render action: "new" }
+        format.html { render action: "new"}
         format.json { render json: @experiment.errors, status: :unprocessable_entity }
       end
     end

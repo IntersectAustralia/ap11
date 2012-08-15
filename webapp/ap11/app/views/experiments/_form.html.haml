@@ -19,5 +19,4 @@
 
   .form-actions
     = f.submit "#{@experiment.new_record? ? 'Create' : 'Edit'} Experiment", :class => "btn btn-primary"
-    = f.button 'Cancel', :class => "btn"
-
+    %a.btn{:href => experiments_path} Cancel

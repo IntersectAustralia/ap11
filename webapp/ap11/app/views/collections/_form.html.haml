@@ -1,0 +1,11 @@
+= simple_form_for(@collection) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :description
+    = f.input :for_codes
+    = f.input :citation_info
+
+  .form-actions
+    = f.button :submit

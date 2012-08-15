@@ -24,7 +24,10 @@ describe ExperimentsController do
   # Experiment. As you add validations to Experiment, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {
+      :title => "Nexus",
+      :date => "2012-08-14"
+    }
   end
 
   # This should return the minimal set of values that should be in the session
@@ -81,7 +84,7 @@ describe ExperimentsController do
 
       it "redirects to the created experiment" do
         post :create, {:experiment => valid_attributes}, valid_session
-        response.should redirect_to(Experiment.last)
+        response.should redirect_to(experiments_url)
       end
     end
 
@@ -123,7 +126,7 @@ describe ExperimentsController do
       it "redirects to the experiment" do
         experiment = Experiment.create! valid_attributes
         put :update, {:id => experiment.to_param, :experiment => valid_attributes}, valid_session
-        response.should redirect_to(experiment)
+        response.should redirect_to(experiments_url)
       end
     end
 

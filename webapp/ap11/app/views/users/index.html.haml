@@ -1,5 +1,5 @@
 - title 'Listing Users'
-%table#users.table.table-bordered.table-striped.table-condensed
+%table#users.table.table-bordered.table-striped
   %tr
     %th First name
     %th Last name
@@ -26,5 +26,6 @@
           = user.last_sign_in_at.localtime.strftime("%d/%m/%Y %I:%M%p")
       %td
         = link_to "View Details", user, :id => "view_#{user.id}"
+        |
         - if can?(:update_role, User)
           = link_to 'Edit role', edit_role_user_path(user), :id => "edit_role_#{user.id}"

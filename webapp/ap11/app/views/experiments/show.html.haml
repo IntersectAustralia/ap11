@@ -1,11 +1,29 @@
 %p#notice= notice
 
-%p
-  %b Title:
-  = @experiment.title
-%p
-  %b Date:
-  = @experiment.date
+%h1 Viewing #{@experiment.title}
+%br
+
+%table.table
+  %tr
+    %th Title
+    %th
+      = @experiment.title
+  %tr
+    %th Date
+    %th
+      = @experiment.date
+  %tr
+    %th Owner
+    %th
+      = @experiment.user.full_name
+  %tr
+    %th Collections
+    %th No collections!
+
+.form-actions
+  %a{:class => "btn btn-primary", :href => '#'}
+    %i{:class => "icon-plus icon-white"}
+    Add Collection
 
 = link_to 'Edit', edit_experiment_path(@experiment)
 \|
