@@ -1,29 +1,9 @@
 !!!
 %html
   %head
-    %title 
-      AP11
-      = " - #{yield :title}"
-
-    = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    = render 'layouts/head'
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.brand{:href => root_path } AP11 - Proteomics-Genomics Nexus
-          .nav-collapse
-            %ul.nav
-              %li= link_to "LINK1"
-              %li= link_to "LINK2"
-              %li= link_to "LINK3"
-          = render 'layouts/user_menu'
+    = render 'layouts/banner'
 
     .container.main_content
       %h1= yield :title

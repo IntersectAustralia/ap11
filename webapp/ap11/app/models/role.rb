@@ -1,4 +1,5 @@
 class Role < ActiveRecord::Base
+  ADMIN_ROLE = 'admin'
 
   attr_accessible :name
 
@@ -17,6 +18,10 @@ class Role < ActiveRecord::Base
       end
     end
     false
+  end
+
+  def admin?
+    self.name == ADMIN_ROLE
   end
 
 end

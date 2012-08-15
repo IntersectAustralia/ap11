@@ -4,7 +4,9 @@ def create_roles_and_permissions
 
   #TODO: create your roles here
   superuser = "admin"
+  researcher = "researcher"
   Role.create!(:name => superuser)
+  Role.create!(:name => researcher)
 
   #TODO: set your own permissions here
   create_permission("User", "read", [superuser])
