@@ -4,4 +4,9 @@ role :web, 'gsw1-ap11-staging-vm.intersect.org.au'
 role :app, 'gsw1-ap11-staging-vm.intersect.org.au'
 # This is where Rails migrations will run
 role :db,  'gsw1-ap11-staging-vm.intersect.org.au', :primary => true
+# The user configured to run the rails app
+set :user, 'devel'
+
+set :el6, false
+set :proxy, nil
 
