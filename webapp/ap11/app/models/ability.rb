@@ -22,6 +22,9 @@ class Ability
       can action, permission.entity.constantize
     end
 
+    if user.role.admin?
+      can :manage, :all
+    end
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)

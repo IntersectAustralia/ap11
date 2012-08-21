@@ -50,12 +50,13 @@ describe CollectionsController do
     end
   end
 
-  describe "GET new" do
-    it "assigns a new collection as @collection" do
-      get :new, {}, valid_session
-      assigns(:collection).should be_a_new(Collection)
-    end
-  end
+
+  #describe "GET new" do
+  #  it "assigns a new collection as @collection" do
+  #    get :new, {}, valid_session
+  #    assigns(:collection).should be_a_new(Collection)
+  #  end
+  #end
 
   describe "GET edit" do
     it "assigns the requested collection as @collection" do

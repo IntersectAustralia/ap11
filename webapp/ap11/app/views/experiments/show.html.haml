@@ -17,13 +17,13 @@
     %th
       = @experiment.user.full_name
   %tr
-    %th Collections
-    %th No collections!
+    %th Input Collections
+    %th None
+  %tr
+    %th Output Collection
+    %th None
 
 .form-actions
-  %a{:class => "btn btn-primary", :href => '#'}
-    %i{:class => "icon-plus icon-white"}
-    Add Collection
 
 = link_to 'Edit', edit_experiment_path(@experiment)
 \|

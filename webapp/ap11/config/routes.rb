@@ -1,4 +1,8 @@
 Ap11::Application.routes.draw do
+  resources :output_collections
+
+  resources :input_collections
+
   resources :collections
 
   devise_for :users, controllers: {registrations: "user_registers", passwords: "user_passwords"}
@@ -30,9 +34,7 @@ end
   end
 
   resources :experiments do
-    collection do
-      #get/put input collections
-      #get/put output collections
+    resources :collections do
     end
   end
 

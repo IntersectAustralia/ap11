@@ -1,11 +1,27 @@
-= simple_form_for(@collection) do |f|
-  = f.error_notification
+= form_for(@collection) do |f|
 
-  .form-inputs
-    = f.input :name
-    = f.input :description
-    = f.input :for_codes
-    = f.input :citation_info
+  = render "shared/error_messages", :target => @collection
+
+  .control-group
+    = f.label :name, "Name", :class => "control-label"
+    .controls
+      = f.text_field :name
+
+  .control-group
+    = f.label :description, "Description", :class => "control-label"
+    .controls
+      = f.text_field :description
+
+  .control-group
+    = f.label :for_codes, "FOR codes", :class => "control-label"
+    .controls
+      = f.text_field :for_codes
+
+  .control-group
+    = f.label :citation_info, "Citation Information", :class => "control-label"
+    .controls
+      = f.text_field :citation_info
 
   .form-actions
-    = f.button :submit
+    = f.submit "#{@collection.new_record? ? 'Create' : 'Edit'} Collection", :class => "btn btn-primary"
+    %a.btn{:href => experiment_path(@experiment)} Cancel

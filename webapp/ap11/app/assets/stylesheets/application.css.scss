@@ -12,5 +12,10 @@
  *= require_tree .
 */
 
+$navbarBackground: #fff;
+$navbarBackgroundHighlight: #fff;
+
+// remove box-shadow in the navbar
+
 @import "bootstrap";
 body { padding-top: 60px; }

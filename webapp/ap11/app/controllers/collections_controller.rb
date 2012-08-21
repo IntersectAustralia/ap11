@@ -1,6 +1,5 @@
 class CollectionsController < ApplicationController
-  # GET /collections
-  # GET /collections.json
+
   def index
     @collections = Collection.all
 
@@ -10,35 +9,20 @@ class CollectionsController < ApplicationController
     end
   end
 
-  # GET /collections/1
-  # GET /collections/1.json
   def show
     @collection = Collection.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @collection }
-    end
   end
 
-  # GET /collections/new
-  # GET /collections/new.json
   def new
+    @experiment = Experiment.find(params[:experiment_id])
     @collection = Collection.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @collection }
-    end
   end
 
-  # GET /collections/1/edit
   def edit
     @collection = Collection.find(params[:id])
   end
 
-  # POST /collections
-  # POST /collections.json
   def create
     @collection = Collection.new(params[:collection])
 
@@ -53,8 +37,6 @@ class CollectionsController < ApplicationController
     end
   end
 
-  # PUT /collections/1
-  # PUT /collections/1.json
   def update
     @collection = Collection.find(params[:id])
 
@@ -69,8 +51,6 @@ class CollectionsController < ApplicationController
     end
   end
 
-  # DELETE /collections/1
-  # DELETE /collections/1.json
   def destroy
     @collection = Collection.find(params[:id])
     @collection.destroy
