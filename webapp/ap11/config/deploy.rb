@@ -1,8 +1,9 @@
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
 require 'capistrano_colors'
 require 'rvm/capistrano'
+require 'colorize'
 
 set :application, 'ap11'
 set :stages, %w(qa staging production)
@@ -110,12 +111,12 @@ namespace :deploy do
 
   # Remote bundle install
   task :rebundle do
-    run "cd #{current_path} && bundle install"
+    run "cd #{current_path}/webapp/ap11 && bundle install"
     restart
   end
 
   task :bundle_update do
-    run "cd #{current_path} && bundle update"
+    run "cd #{current_path}/webapp/ap11 && bundle update"
     restart
   end
 
@@ -132,20 +133,20 @@ namespace :deploy do
   # Load the schema
   desc "Load the schema into the database (WARNING: destructive!)"
   task :schema_load, :roles => :db do
-    run("cd #{current_path} && rake db:schema:load", :env => {'RAILS_ENV' => "#{stage}"})
+    run("cd #{current_path}/webapp/ap11 && rake db:schema:load", :env => {'RAILS_ENV' => "#{stage}"})
   end
 
   # Run the sample data populator
   desc "Run the test data populator script to load test data into the db (WARNING: destructive!)"
   task :populate, :roles => :db do
     generate_populate_yml
-    run("cd #{current_path} && rake db:populate", :env => {'RAILS_ENV' => "#{stage}"})
+    run("cd #{current_path}/webapp/ap11 && rake db:populate", :env => {'RAILS_ENV' => "#{stage}"})
   end
 
   # Seed the db
   desc "Run the seeds script to load seed data into the db (WARNING: destructive!)"
   task :seed, :roles => :db do
-    run("cd #{current_path} && rake db:seed", :env => {'RAILS_ENV' => "#{stage}"})
+    run("cd #{current_path}/webapp/ap11 && rake db:seed", :env => {'RAILS_ENV' => "#{stage}"})
   end
 
   desc "Full redepoyment, it runs deploy:update and deploy:refresh_db"
