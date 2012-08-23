@@ -4,7 +4,7 @@
   <title><![CDATA[Tagged &ldquo;protgenexus&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/tags/protgenexus/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2012-08-23T15:33:05+10:00</updated>
+  <updated>2012-08-23T15:35:47+10:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -25,6 +25,29 @@ bringing some ideas of what features we could have for IGV.</p>
 
 <p>On the other hand, development just started on the <em>samifier</em> and the team is getting closer to a first cut. It is a prototype written in Ruby.
 It won't have reverse strand handling, but will be able to generate fragments of forward encoded proteins, even if they are split by introns.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SRS pages]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2012/08/08/srs/"/>
+    <updated>2012-08-08T14:10:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2012/08/08/srs</id>
+    <content type="html"><![CDATA[<p>The Sofware Requirements Specification (SRS) is live as a set of pages answering some general questions about the project.</p>
+
+<p>Here they are:</p>
+
+<ol>
+<li>Who is doing this? <a href="/product-team/">Product team</a></li>
+<li>Why is it worth doing? <a href="/why/">Main goals</a></li>
+<li>Who is this for? <a href="/users/">Users</a></li>
+<li>What is the added value? <a href="/measuring-success/">Specific goals</a></li>
+<li>How is it going to work? <a href="/design/">Features and architecture</a></li>
+<li>What will be the outcomes? <a href="/outcomes/">Products and outcomes</a></li>
+</ol>
+
+
+<p>We will be updating these entries as we go and are a key reference in the evolution of the project.</p>
 ]]></content>
   </entry>
   
