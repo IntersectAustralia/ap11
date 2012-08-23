@@ -2,7 +2,7 @@
 layout: page
 title: "product team"
 date: 2012-08-07 13:26
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsProjectTeam, andsSkills
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsProjectTeam, andsSkills]
 comments: true
 sharing: true
 footer: true

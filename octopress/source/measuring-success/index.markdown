@@ -2,7 +2,7 @@
 layout: page
 title: "Added value"
 date: 2012-08-07 15:53
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsQuality, andsValue, andsAssessment, andsCustomers
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsQuality, andsValue, andsAssessment, andsCustomers]
 comments: true
 sharing: true
 footer: true

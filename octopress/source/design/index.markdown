@@ -2,7 +2,7 @@
 layout: page
 title: "Solution's design"
 date: 2012-08-07 16:20
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsFeatures, andsFunctions, andsTechnology, andsArchitecture, andsTools
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsFeatures, andsFunctions, andsTechnology, andsArchitecture, andsTools]
 comments: true
 sharing: true
 footer: true

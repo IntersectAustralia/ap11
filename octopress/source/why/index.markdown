@@ -2,7 +2,7 @@
 layout: page
 title: "why do this project"
 date: 2012-08-07 14:47
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsProjectDescription, andsContext, andsAims, andsObjectives
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsProjectDescription, andsContext, andsAims, andsObjectives]
 comments: true
 sharing: true
 footer: true

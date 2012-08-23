@@ -3,7 +3,7 @@ layout: post
 title: "proteomic-genomic nexus presentation"
 date: 2012-08-22 13:34
 comments: true
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsContractedDoVs, andsValue 
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsContractedDoVs, andsValue] 
 categories: 
 ---
 

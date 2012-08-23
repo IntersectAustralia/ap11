@@ -2,7 +2,7 @@
 layout: page
 title: "Outcomes"
 date: 2012-08-07 17:36
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsOutputs, andsProduct
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsOutputs, andsProduct]
 comments: true
 sharing: true
 footer: true

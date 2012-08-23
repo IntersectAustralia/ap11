@@ -1,0 +1,14 @@
+{% if page.tags %}
+<section class="well">
+  <ul id="recent_posts" class="nav nav-list">
+    <li class="nav-header">Tags</li>
+  </ul>
+  <ul id="recent_posts" class="nav nav-pills">
+    {% for t in page.tags  %}
+      <li>
+        <a href="{{ root_url }}/tags/{{t}}">{{t}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

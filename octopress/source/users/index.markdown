@@ -2,7 +2,7 @@
 layout: page
 title: "End users"
 date: 2012-08-07 16:25
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsCustomers, andsOwners
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, andsCustomers, andsOwners]
 comments: true
 sharing: true
 footer: true
