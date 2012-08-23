@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tagged &ldquo;DIISRTE&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
+  <link href="http://IntersectAustralia.github.com/ap11/tags/diisrte/atom.xml" rel="self"/>
+  <link href="http://IntersectAustralia.github.com/ap11/"/>
+  <updated>2012-08-23T15:33:05+10:00</updated>
+  <id>http://IntersectAustralia.github.com/ap11/</id>
+  <author>
+    <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[proteomic-genomic nexus presentation]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2012/08/22/proteomic-genomic-nexus-presentation/"/>
+    <updated>2012-08-22T13:34:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2012/08/22/proteomic-genomic-nexus-presentation</id>
+    <content type="html"><![CDATA[<p>Ignatious just presented the project to the rest of the lab. One finds the slides <a href="/files/Proteomic-Genomic_Nexus.pptx">here</a>. The general feedback was positive,
+bringing some ideas of what features we could have for IGV.</p>
+
+<p><a href="/files/Proteomic-Genomic_Nexus.pptx"><img src="/files/Proteomic-Genomic_Nexus.jpg" width="350"></a></p>
+
+<p>On the other hand, development just started on the <em>samifier</em> and the team is getting closer to a first cut. It is a prototype written in Ruby.
+It won't have reverse strand handling, but will be able to generate fragments of forward encoded proteins, even if they are split by introns.</p>
+]]></content>
+  </entry>
+  
+</feed>
