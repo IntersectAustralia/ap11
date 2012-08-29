@@ -2,7 +2,7 @@
 layout: post
 title: "SRS pages"
 date: 2012-08-08 14:10
-tags: protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, srs
+tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, srs]
 comments: true
 categories: 
 ---
