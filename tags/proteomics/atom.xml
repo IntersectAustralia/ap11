@@ -4,7 +4,7 @@
   <title><![CDATA[Tagged &ldquo;proteomics&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/tags/proteomics/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2012-08-29T15:02:20+10:00</updated>
+  <updated>2012-09-13T21:43:27+10:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -12,6 +12,150 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Notes from demo 2]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2012/09/13/notes-from-demo-2/"/>
+    <updated>2012-09-13T17:24:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2012/09/13/notes-from-demo-2</id>
+    <content type="html"><![CDATA[<p>Demo number two was about seeing the samifier and the <em>predicted</em> proteins implemented in Java. We had a chat too about how
+the web app was going.</p>
+
+<!-- more -->
+
+
+<p>We installed the java command line tools and here you can see their output when no parameters are given:</p>
+
+<p>The <em>samifier</em></p>
+
+<p>```text
+$ java -jar samifier.jar
+usage: samifier -c <chromosomeDir> -g <genomeFile> -m <mappingFile> -o</p>
+
+<pre><code>   &lt;outputFile&gt; -r &lt;searchResultsFile&gt;
+</code></pre>
+
+<p> -c <chromosomeDir>       Directory containing the chromosome files in</p>
+
+<pre><code>                      FASTA format for the given genome
+</code></pre>
+
+<p> -g <genomeFile>          Genome file in gff format
+ -m <mappingFile>         File mapping protein identifier to ordered locus</p>
+
+<pre><code>                      name
+</code></pre>
+
+<p> -o <outputFile>          Filename to write the SAM format file to
+ -r <searchResultsFile>   Mascot search results file in txt format
+```</p>
+
+<p>and the <em>protein generator</em></p>
+
+<p>```text
+$ java -jar protein_generator.jar
+usage: protein_generator -d <Database Name> -f <Genome File> [-g &lt;Glimmer</p>
+
+<pre><code>   File&gt;] [-i &lt;Split Interval&gt;] -o &lt;Output File&gt; [-t &lt;Translation
+   Table File&gt;]
+</code></pre>
+
+<p> -d <Database Name>            Database name
+ -f <Genome File>              Genome file in FASTA format
+ -g <Glimmer File>             Glimmer txt file. Can't be used with the -i</p>
+
+<pre><code>                           option.
+</code></pre>
+
+<p> -i <Split Interval>           Size of the intervals into which the genome</p>
+
+<pre><code>                           will be split. Can't be used with the -g
+                           option.
+</code></pre>
+
+<p> -o <Output File>              Filename to write the FASTA format file to
+ -t <Translation Table File>   File containing a mapping of codons to</p>
+
+<pre><code>                           amino acids, in the format used by NCBI.
+</code></pre>
+
+<p>```</p>
+
+<p>although the option <em>-i</em> is still pending, it is meant to be for <em>virtual proteins</em> for next sprint.</p>
+
+<p>We also demoed in the web application the new look &amp; feel, based on the <a href="http://www.systemsbiology.org.au/">SBI</a>
+website. It's still work in progress as we need to define how the menus are going to change for this
+application. That will be a discussion for our next planning meeting. We also showed how to enter an <em>input
+collection</em> in the system, although there were also questions pending in terms of the metadata model.</p>
+
+<p>For this sprint we want to focus in working with the samifier (reverse strand proteins, the mzIdentML
+format,) and the protein generator.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From Mascot to sequence by hand]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2012/09/13/from-mascot-to-sequence-by-hand/"/>
+    <updated>2012-09-13T17:24:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2012/09/13/from-mascot-to-sequence-by-hand</id>
+    <content type="html"><![CDATA[<p>Working with reverse strand proteins requires special attention, as the position arithmetic and logic needs
+to be worked out with care. As developers, we need to have a documented procedure to be able to check
+amino acid and nucleotide sequences and this post is an attempt in that direction.</p>
+
+<!-- more -->
+
+
+<p>First, given an <em>accession</em> table and mascot results (in DAT) format, the following bash command
+outputs proteins of interest in the mascot search</p>
+
+<p><code>bash
+awk '$1 ~ /C$/ &amp;&amp; $3 ~ /_YEAST$/{print $3}' accession.txt | while read ploc; do grep "$ploc" ETD_exclusion_with_inclusion_120517_Band14.txt ; done
+</code></p>
+
+<p>We get lines as the followings:</p>
+
+<p><code>text
+...
+q94_p3=0,755.392593,0.000455,6,IDQPAGR,51,000000000,24.30,0000000000000001020,0,0;"YP264_YEAST":0:300:306:1
+q187_p8=0,803.377319,-0.000271,2,ASDIENR,6,000000000,12.48,0000002000000001000,0,0;"YPR46_YEAST":0:79:85:1
+q317_p2=1,864.437469,-0.003421,4,AMKSNEK,8,005000070,11.04,0000002000000000020,0,0;"YRB30_YEAST":0:182:188:2
+q356_p6=0,880.429031,0.000417,4,GNDVYSAK,24,0000000030,13.38,0000000000000002010,0,0;"APN1_YEAST":0:48:55:1,"VPS10_TALSN":0:118:125:1
+q1253_p1=2,1286.609390,0.000658,5,KTKDMSGGWK,33,040300600030,12.57,0000000001000002010,0,0;"ARB1_YEAST":0:223:232:3
+q1253_p3=2,1286.609390,0.000658,5,KTKDMSGGWK,33,070000600030,11.03,0000000001000002010,0,0;"ARB1_YEAST":0:223:232:3
+"ARB1_YEAST"=68334.57,"ABC transporter ATP-binding protein ARB1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) GN=ARB1 PE=1 SV=1"
+q492_p1=2,943.473938,-0.002490,4,SSKVTKSK,8,0060000000,18.26,0000000002000000000,0,0;"ARN1_YEAST":0:180:187:1,"LPXD_RICM5":0:330:337:1
+q492_p2=2,943.473938,-0.002490,4,SSKVTKSK,8,0600000000,18.26,0000000002000000000,0,0;"ARN1_YEAST":0:180:187:1,"LPXD_RICM5":0:330:337:1
+q554_p4=0,967.473953,0.002495,5,TIVDTIAR,46,0000060000,21.85,0000001001000002010,0,0;"ARX1_YEAST":0:225:232:1
+q19_p9=1,703.386429,-0.000781,4,NEVKSK,18,00000000,13.94,0000000000100002000,0,0;"ATG26_YEAST":0:144:149:1,"ILVD_SULDN":0:534:539:1,"LOC1_DEBHA":0:163:168:1
+...
+</code></p>
+
+<p>Let's pick a protein match there <strong>ARB1_YEAST</strong>. We search for that protein in <a href="http://www.uniprot.org/">UniProtKB</a>
+and we find it as shown in image below</p>
+
+<p><a href="/files/protein-search-1.png"><img src="/files/protein-search-1.png" width="550"></a></p>
+
+<p>We see there the locus name <strong>YER036C</strong>, which we would find in the <em>accession.txt</em> if we looked for our protein of interest. In the
+UniProtKB there is a <strong>cross-refs</strong> link which we click. It just points to one of the sections at the bottom of the page as shown here</p>
+
+<p><a href="/files/protein-search-2.png"><img src="/files/protein-search-2.png" width="550"></a></p>
+
+<p>We follow the link to the EMBL sequence database, particularly the translation code shown. Follow that in new window as it is another
+website, <a href="http://www.ebi.ac.uk/">EMBL-EBI</a>, particularly the page describing the sequence for that protein</p>
+
+<p><a href="/files/protein-search-3.png"><img src="/files/protein-search-3.png" width="550"></a></p>
+
+<p>as the preview above should confirm. There we just go to sequence (see red arrow), a link to the bottom, where we see
+the sequence as displayed in here</p>
+
+<p><a href="/files/protein-search-4.png"><img src="/files/protein-search-4.png" width="550"></a></p>
+
+<p>So, just click the "Show full sequence" link (JavaScript) to reveal the full sequence if it is too long. Voila, the amino acid sequence!</p>
+
+<p>Bear in mind that this whole exercise assumes a reference genome. You can see it just below the locus name in the first screenshot above. Hope
+this instructions help to navigate the complex web of proteomic/genomic data.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[notes from demo 1]]></title>
