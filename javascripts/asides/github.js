@@ -16,8 +16,13 @@ var github = (function(){
         var web_url = commits[i].url;
         web_url = web_url.replace("api.github.com/repos","github.com").replace("commits/","commit/");
         var author = 'Anonymous';
-        if (commits[i].author.name) author = commits[i].author.name;
-        if (commits[i].author.login) author = commits[i].author.login;
+        if (commits[i].author) {
+          if (commits[i].author.name) author = commits[i].author.name;
+          if (commits[i].author.login) author = commits[i].author.login;
+        } else {
+          if (commits[i].commit.author.name) author = commits[i].commit.author.name;
+          if (commits[i].commit.author.login) author = commits[i].commit.author.login;
+        }
         var message = 'No message';
         if (commits[i].commit.message && commits[i].commit.message.trim().length > 0) message = commits[i].commit.message;
         fragment += '<li><a href="'+web_url+'">'+message+'</a> by '+author+'</li>';
