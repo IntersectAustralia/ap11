@@ -15,7 +15,12 @@ var github = (function(){
       for(i = 0; i < commits.length; i++) {
         var web_url = commits[i].url;
         web_url = web_url.replace("api.github.com/repos","github.com").replace("commits/","commit/");
-        fragment += '<li><a href="'+web_url+'">'+commits[i].commit.message+'</a> by '+commits[i].author.login+'</li>';
+        var author = 'Anonymous';
+        if (commits[i].author.name) author = commits[i].author.name;
+        if (commits[i].author.login) author = commits[i].author.login;
+        var message = 'No message';
+        if (commits[i].commit.message && commits[i].commit.message.trim().length > 0) message = commits[i].commit.message;
+        fragment += '<li><a href="'+web_url+'">'+message+'</a> by '+author+'</li>';
       }
     } else {
       fragment += '<li>None</i>';
