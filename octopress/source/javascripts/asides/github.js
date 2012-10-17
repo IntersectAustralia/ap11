@@ -27,7 +27,10 @@ var github = (function(){
       $.getJSON("https://api.github.com/repos/"+options.user+"/"+options.repo+"/commits?since="+options.since+"&until="+options.until+"&callback=?", 
         function(response) {
           var commits = [];
-          if (!response || response.data.length == 0) { return; }
+          if (!response || response.data.length == 0 || response.data.message != null) { 
+             renderCommits(options.target, commits, options.repo);
+             return; 
+          }
           for (var i = 0; i < response.data.length; i++) {
             commits.push(response.data[i]);
           }
