@@ -24,7 +24,7 @@ var github = (function(){
   }
   return {
     showCommits: function(options){
-      $.getJSON("https://api.github.com/repos/"+options.user+"/"+options.repo+"/commits?since="+options.since+"&until="+options.until, 
+      $.getJSON("https://api.github.com/repos/"+options.user+"/"+options.repo+"/commits?since="+options.since+"&until="+options.until+"&callback=?", 
         function(response) {
           var commits = [];
           if (!response || response.length == 0) { return; }
