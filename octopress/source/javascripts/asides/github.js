@@ -27,9 +27,9 @@ var github = (function(){
       $.getJSON("https://api.github.com/repos/"+options.user+"/"+options.repo+"/commits?since="+options.since+"&until="+options.until+"&callback=?", 
         function(response) {
           var commits = [];
-          if (!response || response.length == 0) { return; }
-          for (var i = 0; i < response.length; i++) {
-            commits.push(response[i]);
+          if (!response || response.data.length == 0) { return; }
+          for (var i = 0; i < response.data.length; i++) {
+            commits.push(response.data[i]);
           }
           commits.sort(function(a, b) {
             var aDate = new Date(a.commit.committer.date).valueOf(),
