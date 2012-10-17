@@ -187,6 +187,9 @@ the web app was going.</p>
 
 <p>although the option <em>-i</em> is still pending, it is meant to be for <em>virtual proteins</em> for next sprint.</p>
 
+<p>The <em>samifier</em> code is in <a href="https://github.com/IntersectAustralia/ap11_samifier">here</a> and the
+<em>protein generator</em> <a href="https://github.com/IntersectAustralia/ap11_protein_generator">here</a>.</p>
+
 <p>We also demoed in the web application the new look &amp; feel, based on the <a href="http://www.systemsbiology.org.au/">SBI</a>
 website. It&#8217;s still work in progress as we need to define how the menus are going to change for this
 application. That will be a discussion for our next planning meeting. We also showed how to enter an <em>input
@@ -329,26 +332,46 @@ format,) and the protein generator.</p>
 </section>
 
 
+
+
 <section class="well">
-  <ul id="gh_repos" class="nav">
-    <li class="nav-header">GitHub Repos</li>
+  <ul id="gh_commits_ap11_samifier" class="nav">
+    <li class="nav-header">Commits ap11_samifier</li>
     <li class="loading">Status updating...</li>
   </ul>
-  
-  <a href="https://github.com/intersectaustralia">@intersectaustralia</a> on GitHub
-  
   <script type="text/javascript">
     $(document).ready(function(){
-        github.showRepos({
+        github.showCommits({
             user: 'intersectaustralia',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
+            repo: 'ap11_samifier',
+            since: '2012-09-13',
+            until: '2012-09-26',
+            target: '#gh_commits_ap11_samifier'
         });
     });
   </script>
-  <script src="/ap11/javascripts/asides/github.js" type="text/javascript"> </script>
 </section>
+
+<section class="well">
+  <ul id="gh_commits_ap11_protein_generator" class="nav">
+    <li class="nav-header">Commits ap11_protein_generator</li>
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        github.showCommits({
+            user: 'intersectaustralia',
+            repo: 'ap11_protein_generator',
+            since: '2012-09-13',
+            until: '2012-09-26',
+            target: '#gh_commits_ap11_protein_generator'
+        });
+    });
+  </script>
+</section>
+
+<script src="/ap11/javascripts/asides/github.js" type="text/javascript"> </script>
+
 
 
 

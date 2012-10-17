@@ -4,7 +4,7 @@
   <title><![CDATA[Tagged &ldquo;DIISRTE&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/tags/diisrte/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2012-09-13T21:43:27+10:00</updated>
+  <updated>2012-10-17T19:47:52+11:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -82,6 +82,9 @@ usage: protein_generator -d <Database Name> -f <Genome File> [-g &lt;Glimmer</p>
 <p>```</p>
 
 <p>although the option <em>-i</em> is still pending, it is meant to be for <em>virtual proteins</em> for next sprint.</p>
+
+<p>The <em>samifier</em> code is in <a href="https://github.com/IntersectAustralia/ap11_samifier">here</a> and the
+<em>protein generator</em> <a href="https://github.com/IntersectAustralia/ap11_protein_generator">here</a>.</p>
 
 <p>We also demoed in the web application the new look &amp; feel, based on the <a href="http://www.systemsbiology.org.au/">SBI</a>
 website. It's still work in progress as we need to define how the menus are going to change for this
