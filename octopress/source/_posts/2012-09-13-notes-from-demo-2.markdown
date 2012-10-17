@@ -6,8 +6,8 @@ tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustra
 comments: true
 categories: 
 commits: 
-  since: 2012-09-13
-  until: 2012-09-26
+  since: 2012-08-31
+  until: 2012-09-13
 ---
 
 Demo number two was about seeing the samifier and the _predicted_ proteins implemented in Java. We had a chat too about how
