@@ -5,6 +5,9 @@ date: 2012-09-13 17:24
 tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, sprint demo]
 comments: true
 categories: 
+commits: 
+  since: 2012-09-13
+  until: 2012-09-26
 ---
 
 Demo number two was about seeing the samifier and the _predicted_ proteins implemented in Java. We had a chat too about how
@@ -49,6 +52,9 @@ usage: protein_generator -d <Database Name> -f <Genome File> [-g <Glimmer
 ```
 
 although the option *-i* is still pending, it is meant to be for _virtual proteins_ for next sprint.
+
+The *samifier* code is in [here](https://github.com/IntersectAustralia/ap11_samifier) and the
+*protein generator* [here](https://github.com/IntersectAustralia/ap11_protein_generator).
 
 We also demoed in the web application the new look & feel, based on the [SBI](http://www.systemsbiology.org.au/)
 website. It's still work in progress as we need to define how the menus are going to change for this 

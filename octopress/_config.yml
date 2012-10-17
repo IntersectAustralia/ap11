@@ -63,6 +63,7 @@ github_user: intersectaustralia
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
+github_repos: [ap11_samifier, ap11_protein_generator, ap11_webapp]
 
 # Twitter
 twitter_user:

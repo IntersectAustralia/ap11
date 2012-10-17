@@ -5,6 +5,9 @@ date: 2012-08-29 13:40
 tags: [protgenexus, proteomics, genomics, transcriptome, DIISRTE, fundedByAustralianNationalDataService, andsApps, ap11, sprint demo]
 comments: true
 categories: 
+commits:
+  since: 2012-08-29
+  until: 2012-09-12
 ---
 
 We had our first sprint demo on the 27/Aug, which didn't go without its hurdles. We showed the web app site, with initial
