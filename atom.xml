@@ -4,7 +4,7 @@
   <title><![CDATA[Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2013-04-30T14:33:41+10:00</updated>
+  <updated>2013-04-30T15:21:11+10:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -117,6 +117,49 @@ he sustainability of the product has been considered throughout the project and 
 <li>Most of the software was developed in Java as this is the language that the research team at UNSW are familiar with.</li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[User Testing Report]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2013/04/15/user-testing-report/"/>
+    <updated>2013-04-15T17:00:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2013/04/15/user-testing-report</id>
+    <content type="html"><![CDATA[<p>User Testing has been completed on the AP11 application. Our user testing was completed by Ignatius Pang and Aidan Tay, who have extensive experience in genomics and proteomics and are part of the Ramaciotti Centre at UNSW. They used realistic data (in terms of content and size) for the testing, and their feedback was invaluable in helping produce a high quality solution. Read on for more info about their findings.</p>
+
+<!-- more -->
+
+
+<h2>The Application</h2>
+
+<p>An overview of the application can be found on our wiki at <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/Application-description">Application Description</a>.</p>
+
+<p>Source code can be found at:</p>
+
+<p><a href="https://github.com/IntersectAustralia/ap11_samifier">Samifier Source Code - Github</a> - this is the java command line components described above</p>
+
+<p>and</p>
+
+<p><a href="https://github.com/IntersectAustralia/ap11_webapp">Webapp Source Code - Github</a> - this is the webapp that&#8217;s used to record experimental details and provide the feed to RDA.</p>
+
+<p>We also have a <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/User-manual">User Manual</a>, and <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/Developers-Guide">Developers Guide</a>. Check out the <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki">Wiki Home Page</a> for further useful guides and documents.</p>
+
+<h2>Testing</h2>
+
+<p>Ignatius Pang and Aidan Tay from UNSW have written up a fantastic account of the testing they performed - this can be found at <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/User-assisted-testing">User assisted testing report</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Presentation at Lorne Proteomics Conference 2013]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2013/02/18/presentation-at-lorne-proteomics-conference-2013/"/>
+    <updated>2013-02-18T10:37:00+11:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2013/02/18/presentation-at-lorne-proteomics-conference-2013</id>
+    <content type="html"><![CDATA[<p>Marc Wilkins presented a poster titled &#8220;Validation of Genomes and Transcriptomes with Proteomics Data&#8221; at the 18th meeting of the Australian Proteomics Society at Lorne. Marc reported that the poster was of exceptional interest. He said that over the two hour session, there was a constant stream of people keen for an explanation. Groups were from local facilities (including APAF) along with some from overseas.</p>
+
+<p>This is a great success for the project and we look forward to hearing more as people start trying out the software.</p>
+
+<p><a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/Product%20Overview.pdf">link to the poster</a></p>
 ]]></content>
   </entry>
   
