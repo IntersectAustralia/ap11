@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tagged &ldquo;andsFinalProduct&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
+  <link href="http://IntersectAustralia.github.com/ap11/tags/andsfinalproduct/atom.xml" rel="self"/>
+  <link href="http://IntersectAustralia.github.com/ap11/"/>
+  <updated>2013-04-30T14:29:49+10:00</updated>
+  <id>http://IntersectAustralia.github.com/ap11/</id>
+  <author>
+    <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Final product]]></title>
+    <link href="http://IntersectAustralia.github.com/ap11/blog/2013/04/30/final-product/"/>
+    <updated>2013-04-30T13:20:00+10:00</updated>
+    <id>http://IntersectAustralia.github.com/ap11/blog/2013/04/30/final-product</id>
+    <content type="html"><![CDATA[<p>The AP11 project (Proteomic-genomic Nexus) has reached</p>
+
+<h1>Introductory Product Information</h1>
+
+<p><em>The Proteomic-Genomic Nexus</em> is a software package that is designed to integrate genomic and transcriptomic data generated from next-generation sequencing with proteomic data generated from protein mass spectrometry.</p>
+
+<p>The primary users of this product will be biologists who would like to integrate their genomics and proteomics data, and be able to visualize them. The tool will be deployed in a number of pilot projects in collaboration with several research groups in Australia and internationally. The research domains span across basic science, primary industry, and medical research.</p>
+
+<p>By using the Proteomic-Genomic Nexus, users will be able to co-visualise genomics, transcriptomic and proteomic data using the Integrative Genomics Viewer. We will be able to validate the existence of genes using peptides identified from mass spectrometry experiments. We will use this to verify alternatively spliced genes by searching for peptides that span across exon-exon junctions.</p>
+
+<h1>Instructional Product Information</h1>
+
+<p>The tools from developed as a part of the Proteomics-Genomics Nexus project allowed us to visualize all the peptides from the proteome of an organism and efficiently analyze the data.</p>
+
+<p>Using the Samifier tool, we co-visualized the genomics, transcriptomics, and proteomics data of Saccharomyces cerevisiae using the Integrative Genomics Viewer (IGV). An example of peptides visualized using IGV is shown in the figure below. The Integrative Genomics Viewer was used to visualize experimental peptides for the yeast 40S ribosomal protein S7-B (YNL096C). A peptide which spans exon-exon junction is highlighted in the red box. This analysis has also been done on a genome / proteome scale.</p>
+
+<p><img src="https://github.com/IntersectAustralia/ap11_samifier/wiki/images/Application_Description/Figure_2_IGV_Example_1.png" width="550"></p>
+
+<p>The Results Analyser was used to verify proteins coded in the Campylobacter concisus (an emergent gut pathogen)  and Saccharomyces cerevisiae (Baker’s yeast) genome. Proteins were verified on the basis of two or more peptide ‘hits’, with Mascot scores exceeding an identity threshold. Firstly, for Campylobacter concisus, 66% (1320/2002) of previously known proteins in Uniprot were verified with peptides identified from mass spectrometry experiments. Secondly, for Saccharomyces cerevisiae, 61% (4046/6621) of the proteins as well as 25% (78/284) of all splice junctions in the yeast proteome were verified from a comprehensive proteome analysis (de Godoy et al., 2008, Nature 455:1251-1254). We are in the process of performing analysis on human proteomics data to find evidence for peptides that spans across exon-exon junctions. This will validate the existence of known and novel alternatively spliced transcripts.</p>
+
+<h2>Getting started</h2>
+
+<p>Please refer to the <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/Deployment-guide">deployment guide</a> on instructions on how to download or build the tools.</p>
+
+<h2>Documentation</h2>
+
+<p>There are a number of manual and document resources available:</p>
+
+<ul>
+<li><p><a href="https://github.com/IntersectAustralia/ap11_samifier/wiki/User-manual">User manual</a></p></li>
+<li><p>Github repositories:</p>
+
+<p>-- <a href="https://github.com/IntersectAustralia/ap11_samifier/">AP11 tools</a></p>
+
+<p>-- <a href="https://github.com/IntersectAustralia/ap11_webapp">Web application</a></p></li>
+<li><p><a href="http://intersectaustralia.github.io/ap11/">Blog</a></p></li>
+<li><p>Technical documentation:</p>
+
+<p>-- <a href="https://github.com/IntersectAustralia/ap11_samifier/wiki">AP11 tools</a> -  includes links to deployment and developer guides</p>
+
+<p>-- <a href="https://github.com/IntersectAustralia/ap11_webapp/wiki">Web application</a> - includes links to deployment and developer guides</p></li>
+<li><p>Overview diagram</p></li>
+</ul>
+
+
+<p>The following diagram (from the wiki,) outlines where the different tools fit within the genomics/proteomics research paths.</p>
+
+<p><img src="https://github.com/IntersectAustralia/ap11_samifier/wiki/images/Application_Description/Figure_1_Analytical_pipeline_1.png"></p>
+
+<h1>Product re-usability information</h1>
+
+<p>A number of Java classes where implemented to parse the specific elements of information required by the tools. Their implementation maybe of interest to
+the genomics and/or proteomics community. They are found in <a href="https://github.com/IntersectAustralia/ap11_samifier/tree/master/src/au/org/intersect/samifier/parser">here</a>
+and include:</p>
+
+<ul>
+<li><p>A FASTA file reader with caching that can read contig files (see fastaParserImpl.java)</p></li>
+<li><p>A GFF parser (see GenomeParserImpl.java)</p></li>
+<li><p>A mzIdentML reader (see mzidentml package), that although specific (it extracts the peptide results required by other parts of the system) is flexible enough to
+work with version 1.0 and 1.1 of the standard.</p></li>
+</ul>
+
+
+<p>There are also a couple of command line <a href="https://github.com/IntersectAustralia/ap11_samifier/tree/master/src/au/org/intersect/samifier/tool">utilities</a></p>
+
+<ul>
+<li><p>CodonFinder &lt;FASTA-file> &lt;Translation-table> {+|-} [&lt;start>] [&lt;end>]</p>
+
+<p>Prints codons in whole fasta file or between (optional) &lt;start> and &lt;end> parameters. The + or - parameter represents forward or reverse strand translation.</p></li>
+<li><p>NucleotideToAminoacid &lt;Translation-table> &lt;protein-sequence> [&lt;frame>]</p>
+
+<p>Produces the aminoacid sequence for a given nucleotide sequence, optionally applying a &lt;frame> before translation.</p></li>
+</ul>
+
+
+<h1>Contextual Product Information</h1>
+
+<p>All code is licensed under the GNU GPL v3 license - see LICENSE.txt in each code repository for license text. Documentation (contained in the Github wiki) is licensed under Creative Commons Attribution-Share Alike</p>
+
+<p>Due to the extensive testing by the research stakeholders, the software is now robust, mature and fit for purpose. The ongoing maintenance of the software may occur in a number of ways, as appropriate:</p>
+
+<ul>
+<li>Intersect provides a 3 month warranty period for the project</li>
+<li>The team at the UNSW Ramaciotti Centre may continue to enhance the software</li>
+<li><p>Further enhancements and fixes may be done by Intersect, under the support and maintenance agreement between UNSW and Intersect.
+T
+he sustainability of the product has been considered throughout the project and the software has been designed to maximise future maintainability:</p></li>
+<li><p>The software has an extensive suite of automated unit tests that clearly describe the expected behaviour of the code.</p></li>
+<li>This is augmented by a suite of integration tests created by the research stakeholders.</li>
+<li>The code is open source so that other groups can contribute code back to the project.</li>
+<li>Using Github makes it easy for changes from other groups to easily be incorporated back into the main code base.</li>
+<li>The system has extensive documentation to explain the design and modules of the system.</li>
+<li>Most of the software was developed in Java as this is the language that the research team at UNSW are familiar with.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
