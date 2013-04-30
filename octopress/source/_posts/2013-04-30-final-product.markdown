@@ -80,7 +80,7 @@ There are also a couple of command line [utilities](https://github.com/Intersect
 
   Prints codons in whole fasta file or between (optional) \<start\> and \<end\> parameters. The + or - parameter represents forward or reverse strand translation.
 
-- NucleotideToAminoacid \<Translation-table\> \<protein-sequence\> \[\<frame\>\]
+- NucleotideToAminoacid \<Translation-table\> \<nucleotide-sequence\> \[\<frame\>\]
 
   Produces the aminoacid sequence for a given nucleotide sequence, optionally applying a \<frame\> before translation.
 
@@ -91,7 +91,7 @@ All code is licensed under the GNU GPL v3 license - see LICENSE.txt in each code
 Due to the extensive testing by the research stakeholders, the software is now robust, mature and fit for purpose. The ongoing maintenance of the software may occur in a number of ways, as appropriate:
 
 * Intersect provides a 3 month warranty period for the project
-* The team at the UNSW Ramaciotti Centre may continue to enhance the software
+* The team at the NSW Systems Biology Initiative may continue to enhance the software
 * Further enhancements and fixes may be done by Intersect, under the support and maintenance agreement between UNSW and Intersect.
 T
 he sustainability of the product has been considered throughout the project and the software has been designed to maximise future maintainability:
