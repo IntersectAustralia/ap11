@@ -4,7 +4,7 @@
   <title><![CDATA[Tagged &ldquo;andsFinalProduct&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/tags/andsfinalproduct/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2013-04-30T14:29:49+10:00</updated>
+  <updated>2013-04-30T14:33:41+10:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -18,7 +18,11 @@
     <link href="http://IntersectAustralia.github.com/ap11/blog/2013/04/30/final-product/"/>
     <updated>2013-04-30T13:20:00+10:00</updated>
     <id>http://IntersectAustralia.github.com/ap11/blog/2013/04/30/final-product</id>
-    <content type="html"><![CDATA[<p>The AP11 project (Proteomic-genomic Nexus) has reached</p>
+    <content type="html"><![CDATA[<p>The AP11 project (Proteomic-genomic Nexus) has reached end of development and we are happy to announce the proteomic-genomic nexus tools are available
+for the general public.</p>
+
+<!-- more -->
+
 
 <h1>Introductory Product Information</h1>
 
