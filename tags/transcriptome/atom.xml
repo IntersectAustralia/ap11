@@ -4,7 +4,7 @@
   <title><![CDATA[Tagged &ldquo;transcriptome&rdquo; | Proteomic-Genomic Nexus (AP11)]]></title>
   <link href="http://IntersectAustralia.github.com/ap11/tags/transcriptome/atom.xml" rel="self"/>
   <link href="http://IntersectAustralia.github.com/ap11/"/>
-  <updated>2013-04-30T15:21:11+10:00</updated>
+  <updated>2013-04-30T16:07:46+10:00</updated>
   <id>http://IntersectAustralia.github.com/ap11/</id>
   <author>
     <name><![CDATA[Intersect and Ramaciotti Institute (UNSW)]]></name>
@@ -91,7 +91,7 @@ work with version 1.0 and 1.1 of the standard.</p></li>
 <li><p>CodonFinder &lt;FASTA-file> &lt;Translation-table> {+|-} [&lt;start>] [&lt;end>]</p>
 
 <p>Prints codons in whole fasta file or between (optional) &lt;start> and &lt;end> parameters. The + or - parameter represents forward or reverse strand translation.</p></li>
-<li><p>NucleotideToAminoacid &lt;Translation-table> &lt;protein-sequence> [&lt;frame>]</p>
+<li><p>NucleotideToAminoacid &lt;Translation-table> &lt;nucleotide-sequence> [&lt;frame>]</p>
 
 <p>Produces the aminoacid sequence for a given nucleotide sequence, optionally applying a &lt;frame> before translation.</p></li>
 </ul>
@@ -105,7 +105,7 @@ work with version 1.0 and 1.1 of the standard.</p></li>
 
 <ul>
 <li>Intersect provides a 3 month warranty period for the project</li>
-<li>The team at the UNSW Ramaciotti Centre may continue to enhance the software</li>
+<li>The team at the NSW Systems Biology Initiative may continue to enhance the software</li>
 <li><p>Further enhancements and fixes may be done by Intersect, under the support and maintenance agreement between UNSW and Intersect.
 T
 he sustainability of the product has been considered throughout the project and the software has been designed to maximise future maintainability:</p></li>
